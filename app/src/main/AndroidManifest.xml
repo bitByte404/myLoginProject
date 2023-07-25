@@ -12,8 +12,23 @@
         android:theme="@style/Theme.LoginProject"
         tools:targetApi="31">
         <activity
+            android:name=".RootActivity"
+            android:exported="true"
+            android:label="@string/title_activity_root"
+            android:theme="@style/Theme.LoginProject">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

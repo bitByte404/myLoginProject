@@ -1,5 +1,11 @@
 pluginManagement {
     repositories {
+        //新增这四个 换源
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+
         google()
         mavenCentral()
         gradlePluginPortal()
@@ -8,6 +14,13 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+
+        //新增这4个 换源
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+
         google()
         mavenCentral()
     }
